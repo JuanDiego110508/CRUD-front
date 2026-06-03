@@ -1,0 +1,22 @@
+.container {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+.section {
+  background: #1e1e1e;
+
+  border: 1px solid #2d2d2d;
+
+  border-radius: 16px;
+
+  padding: 25px;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.3);
+}

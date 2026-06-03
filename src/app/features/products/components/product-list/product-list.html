@@ -1,0 +1,15 @@
+<h2>Lista de Productos</h2>
+
+<div *ngIf="products.length === 0">
+    <p>No hay productos disponibles.</p>
+</div>
+
+<ul *ngIf="products.length > 0">
+    <app-product-card
+        *ngFor="let product of products"
+        [product]="product"
+        (deleteProduct)="eliminarProducto($event)"
+        (editProduct)="editarProducto($event)">
+    </app-product-card>
+
+</ul>
